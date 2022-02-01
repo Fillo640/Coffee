@@ -28,10 +28,10 @@
           </li>
         </ul>
         @auth
-        <li class="nav-item dropdown meno">
+        <li class="nav-item dropdown ms-auto">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 
-                <i class="fas fa-user-check fa-2x pupo me-5 "></i>
+                <i class="fas fa-user-check fa-2x text-white "></i>
             </a>
                 
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -42,9 +42,9 @@
             </ul>
           </li>
           @else
-          <li class="nav-item dropdown meno">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <i class="fas fa-user-slash fa-2x pupo me-5 "></i>
+          <li class="nav-item dropdown ms-auto">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fas fa-user-slash fa-2x text-white "></i>
             
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">

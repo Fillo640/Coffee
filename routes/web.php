@@ -16,6 +16,8 @@ use App\Http\Controllers\ContactUsFormController;
 */
 // controller homepage
 Route::get('/', [PublicController::class,'homepage'])->name('homepage');
-
+// rotte per contatto
 Route::get('/contact',[PublicController::class,'contactMe'])->name('contattami');
 Route::post('/submit-contact',[PublicController::class,'contactSubmit'])->name('invio.contatto');
+// rotta lingua
+Route::post('/locale/{locale}', [PublicController::class,'locale'])->name('locale');

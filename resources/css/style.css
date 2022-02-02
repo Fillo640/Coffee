@@ -14,7 +14,10 @@
     height: 50vh;
     width: 45vw;
 }
-
+.flags{
+    display: flex;
+    
+}
 @media screen and (max-width:780px){
     .imgheader{
     

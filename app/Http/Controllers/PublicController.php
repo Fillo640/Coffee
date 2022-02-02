@@ -25,4 +25,13 @@ class PublicController extends Controller
             return redirect(route('homepage'))->with('message','la Tua email è stata inoltrata correttamente');
         
     }
+    public function locale($locale){
+        session()->put('locale',$locale);
+        return redirect()->back();
+    }
+
+
+
+
+
 }

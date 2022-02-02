@@ -38,7 +38,7 @@
         {{-- section3 --}}
         <div class="container-fluid">
             <div class="row my-5 text-center">
-                <h2 class="text-center my-5">The founder of our agency: </h2>
+                <h2 class="text-center my-5">The founders of our agency: </h2>
                 <div class="col-12 col-md-4 my-5 text-center">
                     <h3>Mario Rossi</h3>
                     <img src="./media/persona1.jfif" alt="" class="img-fluid"srcset="">
@@ -57,5 +57,71 @@
                 </div>
             </div>
         </div>
-        
+        <div class="container-fluid">
+            <div class="row text-center my-5"> 
+                <h2 class="text-center my-5">An example of our product:</h2>
+                <div class="col-12 col-md-4 my-5">
+                    <div class="card" >
+                        <img src="./media/illy.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Illy coffee</h5>
+                          <p class="card-text">The best coffee in the world you can find it in our store</p>
+                          <a href="#" class="btn btn-dark">Go somewhere</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-12 col-md-4 my-5">
+                    <div class="card" >
+                        <img src="./media/lavazza.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Lavazza coffeee</h5>
+                          <p class="card-text">The best coffee in the world you can find it in our store</p>
+                          <a href="#" class="btn btn-dark">Go somewhere</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-12 col-md-4 my-5 ">
+                    <div class="card" >
+                        <img src="./media/nespresso.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Nespresso coffee</h5>
+                          <p class="card-text">The best coffee in the world you can find it in our store</p>
+                          <a href="#" class="btn btn-dark">Go somewhere</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+        {{-- section4 --}}
+        <div class="container-fluid">
+            <div class="row">
+                <h2>Wanna join to our team? Contact us:</h2>
+                <div class="col 12 col-md-8">
+                    <div class="mb-3">
+                        {{-- <form method="POST" action="{{route('invio-contatto')}}">
+                            @csrf
+                            <div class="mb-3">
+                                <label for="exampleInputName" class="form-label">Name and surname</label>
+                                <input type="text" name='userName' class="form-control" id="exampleInputName" aria-describedby="NameHelp">
+                                
+                              </div>
+                            <div class="mb-3">
+                              <label for="exampleInputEmail" class="form-label">Email adress</label>
+                              <input type="email" name='userMail' class="form-control" id="exampleInputEmail" aria-describedby="emailHelp">
+                              
+                            </div>
+                            <div class="mb-3">
+                              <label for="exampleInputMessage" class="form-label">Message</label>
+                             <textarea name="userMessage" id=""cols="30" rows="5" class="form-control"></textarea>
+                              
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary" id="butsub">Submit</button>
+                        </form> --}}
+                </div>
+                <div class="col-12 col-md-4 d-flex align-items-center justify-content-center">
+                    <i class="fas fa-mug-hot fa-10x"></i>
+                </div>
+            </div>
+        </div>
 </x-layout>

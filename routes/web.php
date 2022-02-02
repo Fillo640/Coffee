@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PublicController;
+use App\Http\Controllers\ContactUsFormController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,3 +16,6 @@ use App\Http\Controllers\PublicController;
 */
 // controller homepage
 Route::get('/', [PublicController::class,'homepage'])->name('homepage');
+
+Route::get('/contact',[PublicController::class,'contactMe'])->name('contattami');
+Route::post('/submit-contact',[PublicController::class,'contactSubmit'])->name('invio.contatto');

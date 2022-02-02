@@ -1,4 +1,23 @@
-.primo{
-    color: red;
+/* header */
+.imgheader{
+    width: 100%;
+    height: 90%;
+    background-size: cover;
     
 }
+/* section1 */
+.imgsotheader{
+    height: 50vh;
+    width: 45vw;
+}
+.imgboston{
+    height: 50vh;
+    width: 45vw;
+}
+@media screen and (max-width:780px){
+    .imgheader{
+    
+     width: 100%;
+     height: 90%;
+    }
+  }

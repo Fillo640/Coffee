@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
   </head>
   <body>
-    
+    <x-navbar />
 
     
     {{$slot}}
@@ -21,6 +21,6 @@
     <script src="https://kit.fontawesome.com/13bb6e0f14.js" crossorigin="anonymous"></script>
     {{-- assett javascript      --}}
     <script src="{{asset('js/app.js')}}"></script>
-
+   
   </body>
 </html>

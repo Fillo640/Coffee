@@ -11281,31 +11281,102 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-/* header */
-.imgheader{
-    width: 100%;
-    height: 90%;
-    background-size: cover;
-    
+/* navbar */
+.navbar
+{
+    background: rgb(167,134,99);
+    background: linear-gradient(128deg, rgba(167,134,99,1) 0%, rgba(98,63,38,1) 75%, rgba(114,71,46,1) 99%);
+    color: white!important;
 }
-/* section1 */
-.imgsotheader{
-    height: 50vh;
-    width: 45vw;
-}
-.imgboston{
-    height: 50vh;
-    width: 45vw;
-}
+
 .flags{
     display: flex;
-    
 }
+.iconcine{
+    background-color: transparent;
+    border: none;
+}
+
+/* header */
+.header{
+    height: 90vh;
+}
+    
+.imgheader{
+    width: 100%;
+    height: 100%;
+    background-image: url(/media/header.png);
+    position: relative;
+}
+.tit{
+    position: absolute;
+    top: 500px;
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+}
+
+   
+   
+    
+/* section1 */
+.colsec1{
+    height: 60vh;
+    width: 60vw;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+.colsec1p{
+    height: 60vh;
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.imgsotheader{
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+.imgboston{
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+.formcontact{
+    
+        background-image: url('/media/header.png');
+        background-size: cover;
+        height: 90vh;
+      
+}
+
 @media screen and (max-width:780px){
     .imgheader{
+      background-image: url(/media/header2.png);
+       
+       
     
-     width: 100%;
-     height: 90%;
+    }
+  }
+  @media screen and (max-width:780px){
+    .colsec1{
+        height: 50vh;
+        width: 100%;
+        
+    
+    }
+  }
+  @media screen and (max-width:780px){
+    .colsec1p{
+        width: 100%;
+        height: 20vh;
+        font-size: 1000px;
+       
+    
+    
     }
   }
 .flag-icon-background {

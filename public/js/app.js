@@ -3216,7 +3216,7 @@ __webpack_require__(/*! ./script */ "./resources/js/script.js");
   \********************************/
 /***/ (() => {
 
-console.log('ciao');
+
 
 /***/ }),
 

@@ -1,43 +1,48 @@
 <x-layout>
-    <x-navbar>
-    </x-navbar>
+  
         {{-- header --}}
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12">
-                    <img src="./media/header.png" alt="cup of coffee" srcset="" class="imgheader">
-                   
-
+        <header >
+            
+            <div class="container-fluid ">
+                <div class="row align-items-center header ">
+                    <div class="col-12 imgheader">
+                        @Auth
+                        <h1 class="tit text-white ">{{__('ui.headertit')}} {{Auth::user()->name}} </h1>
+                        @else
+                        <h1 class="tit text-white ">{{__('ui.headertit')}} </h1>
+                        @endAuth
+                        
+                    </div>
                 </div>
             </div>
-        </div>
+        </header>
         {{-- section1 --}}
-        <div class="container-fluid">
-            <div class="row ">
-                <div class="col-12 col-md-6 d-flex align-items-center justify-content-center flex-column">
-                    <h2 class="my-5">{{__('ui.section1title')}}</h2>
+        <div class="container-fluid my-1 ">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-12 col-md-2 text-center colsec1p">
+                    <h2>{{__('ui.section1title')}}</h2>
                     <h6>{{__('ui.section1_paragraph')}} </h6>
                 </div>
-                <div class="col-12 col-md-6">
-                    <img src="./media/Nice to meet you.png" alt="" class="imgsotheader">
+                <div class="col-12 col-md-10 colsec1">
+                    <img src="./media/you.png" alt="" class="imgsotheader">
                 </div>
             </div>
         </div>
         {{-- section2 --}}
-        <div class="container-fluid my-5">
-            <div class="row">
-                <div class="col-12 col-md-6 order-md-first">
+        <div class="container-fluid ">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-12 col-md-10  colsec1  ">
                     <img src="./media/Boston.png" alt="" srcset="" class="imgboston " >
                 </div>
-                <div class="col-12 col-md-6 my-5 d-flex align-items-center justify-content-center flex-column ">
-                    <h2 class="my-5">{{__('ui.section2title')}}</h2>
+                <div class="col-12 col-md-2 my-5 colsec1p text-center ">
+                    <h2 >{{__('ui.section2title')}}</h2>
                     <h6>{{__('ui.section2paragraph')}}</h6>
                 </div>
             </div>
         </div>
         {{-- section3 --}}
         <div class="container-fluid">
-            <div class="row my-5 text-center">
+            <div class="row my-3 text-center">
                 <h2 class="text-center my-5">{{__('ui.section3title')}} </h2>
                 <div class="col-12 col-md-4 my-5 text-center">
                     <h3>Mario Rossi</h3>
@@ -97,32 +102,32 @@
         <div class="container-fluid">
             <div class="row">
                 <h2>Wanna join to our team? Contact us:</h2>
-                <div class="col 12 col-md-8">
-                    <div class="mb-3">
-                        {{-- <form method="POST" action="{{route('invio-contatto')}}">
-                            @csrf
-                            <div class="mb-3">
-                                <label for="exampleInputName" class="form-label">Name and surname</label>
-                                <input type="text" name='userName' class="form-control" id="exampleInputName" aria-describedby="NameHelp">
-                                
-                              </div>
-                            <div class="mb-3">
-                              <label for="exampleInputEmail" class="form-label">Email adress</label>
-                              <input type="email" name='userMail' class="form-control" id="exampleInputEmail" aria-describedby="emailHelp">
-                              
-                            </div>
-                            <div class="mb-3">
-                              <label for="exampleInputMessage" class="form-label">Message</label>
-                             <textarea name="userMessage" id=""cols="30" rows="5" class="form-control"></textarea>
-                              
-                            </div>
-                            
-                            <button type="submit" class="btn btn-primary" id="butsub">Submit</button>
-                        </form> --}}
-                </div>
-                <div class="col-12 col-md-4 d-flex align-items-center justify-content-center">
+                <div class="col 12 ">
                     <i class="fas fa-mug-hot fa-10x"></i>
+                   <a type="submit"href="{{route('contattami')}}">{{__('ui.navbar_workwithus')}}</a>       
+                
                 </div>
             </div>
         </div>
+        {{-- section5  --}}
+        <div class="container-fluid my-3">
+            <div class="row text-center">
+                <div class="col-12 col-md-4 cartambulanza my-2">
+                    <i class="fas fa-ambulance fa-4x"></i>
+                    <h4>Croce rossa</h4>
+                    <p>Sosteniamo da sempre la croce rossa con donazioni periodiche sono i nostri eroi</p>
+                </div> 
+                <div class="col-12 col-md-4  cartasedia my-2">
+                    <i class="fab fa-accessible-icon fa-4x"></i>
+                    <h4>Disabilità</h4>
+                    <p>Siamo da sempre un azienda attenta alle persone con Disabilità siamo tutti uguali</p>
+                </div> 
+                <div class="col-12 col-md-4 cartamb my-2">
+                    <i class="fas fa-apple-alt fa-4x"></i>
+                    <h4>Ambiente</h4>
+                    <p>Siamo da sempre attenti all'ambiente la terra è la nostra casa ed è nostro dovere tenerla pulita</p>
+                </div> 
+
+            </div>
+        </div>        
 </x-layout>

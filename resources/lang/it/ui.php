@@ -9,15 +9,21 @@ return[
    'section1title'=>'La nostra storia',
    'section2title'=>'I nostri negozi',
    'section2paragraph'=>'Puoi trovare i nostri negozi in molte città tra cui New York, Boston, Miami, Los Angeles, Washington. Stiamo lavorando per aprire nuovi negozi in Europa per espandere la nostra attività.',
-   'section3title'=>'Un esempio dei nostri prodotti',
+   'section3title'=>'I nostri fondatori',
+   'section4title'=>'Un esempio dei nostri prodotti',
    'section4firstcardtitle'=>'Illy caffè',
    'section4secondcardtitle'=>'Lavazza caffè',
    'section4thirdcardtitle'=>'Nespresso caffè',
    'section4firstcardescription'=>'Illy ma che caffè meraviglioso. Disponibile nei nostri negozi di Boston.',
    'section4secondcardescription'=>'Lavazza ecco il re del caffè. Disponibile nei nostri negozi di New York',
    'section4thirdcardescription'=>'Nespresso il migliore in europa lasciati conquistare dal suo gusto inconfondibile.Presto in arrivo.',
+   'headertit'=>'Benvenuto nel sito di Coffeidea',
+   'navbarl1'=>'Benvenuto',
+   'navbarnl1'=>'Benvenuto nel mio sito fai la tua scelta',
+   'navbarnl2'=>'Nuovo? Registrati',
+   'navbarnl3'=>'Log-in',
    ''=>'',
-   ''=>'',
+
 
 
 

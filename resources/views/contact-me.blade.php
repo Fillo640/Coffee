@@ -1,15 +1,27 @@
 <x-layout>
-    <div class="container-fluid">
+    @if ($errors->any())
+    <div class="alert alert-danger">
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+@endif
+    <div class=formcontact>
+
+    
+    <div class="container-fluid text-white">
         <div class="row">
             <div class="col-12">
-                <h1>contact us</h1>
+                <h1>Contact us</h1>
             </div>
         </div>
     </div>
 
-    <div class="container">
+    <div class="container text-white">
         <div class="row">
-            <div class="col-12">
+            <div class="col-12 col-md-4">
                 <form method="POST" action="{{route('invio.contatto')}}">
                     @csrf
                     <div class="mb-3">
@@ -32,5 +44,6 @@
                 </form>
             </div>
         </div>
+    </div>
     </div>
 </x-layout>
